@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: block;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+    overscroll-behavior: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10px;
+    z-index: 100;
+    width: 100%;
+    height: 60px;
+    backface-visibility: hidden;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+nav ul li {
+    list-style: none;
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: .8rem;
+}
+
+nav ul li a:hover {
+    color: aqua;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+.paragraph h1 {
+    font-size: 3.3rem;
+    text-shadow: 10px 10px 10px #000000;
+}
+
+#home {
+    background:
+    url('images/pierre-blache-fVK3G9hDnHM-unsplash.jpg')
+    no-repeat center center/cover;
+}
+
+#features {
+    background: 
+    url('images/xps-EzYq1HOl5_8-unsplash.jpg')
+    no-repeat center center/cover;
+}
+
+#images {
+    background: 
+    url('images/wolfgang-hasselmann-09k72oU7qYU-unsplash.jpg')
+    no-repeat center center/cover;
+}
+
+#contact {
+    background: 
+    url('images/daniel-sessler-khPk1E8x_Jc-unsplash.jpg')
+    no-repeat center center/cover;
+}
